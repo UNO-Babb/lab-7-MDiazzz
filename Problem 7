@@ -1,10 +1,20 @@
 #Name: Michelle Diaz
-#Date: 10/6/2025
+#Date: 10/8/2025
 #Assignment: Project Euler Problem 7
 
 from NumberTests import isPrime
 
+nthprimenumber = 0
+counter = 1
 
+while True:
+    if isPrime(counter): 
+        nthprimenumber += 1
+    if nthprimenumber > 10001:
+        break
+    counter += 1
+
+print(counter)
 
 
 
