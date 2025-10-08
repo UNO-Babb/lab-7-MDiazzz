@@ -1,0 +1,13 @@
+#Name: Michelle Diaz
+#Date: 10/8/2025
+#Assignment: Project Euler Problem 10
+
+from NumberTests import isPrime
+
+primeSum = 2
+
+for i in range(3,2_000_000, 2):
+    if isPrime(i): 
+        primeSum += i
+
+print(primeSum)
